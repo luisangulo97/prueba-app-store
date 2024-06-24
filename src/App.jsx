@@ -1,11 +1,6 @@
-import Nav from './components/Nav/Nav';
+import { RouterProvider } from "react-router-dom";
+import router from "./routes/router";
 
-function App() {
-
-
-  return (
-        <Nav/>
-  )
+export default function App() {
+  return <RouterProvider router={router} />;
 }
-
-export default App
